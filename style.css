@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 * {
-	margin: 0;
-	padding: 0;
-	font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
 }
 
-body{
-    background-color: rgb(4, 12, 41);
+body {
+    background-color: #00171F;
     color: #ffffff;
     display: flex;
     justify-content: center;
@@ -15,32 +15,32 @@ body{
     height: 100vh;
 }
 
-.card{
-    box-shadow: 2px 3px 10px rgb(255,255,255,0.2), -2px -3px 10px rgb(0,0,0,0.3);
+.card {
+    box-shadow: 2px 3px 10px rgb(255, 255, 255, 0.2), -2px -3px 10px rgb(0, 0, 0, 0.3);
     padding: 50px;
-    border-radius: 10px;
+    border-radius: 12px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-.form{
+.form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.input-grp{
+.input-grp {
     display: flex;
     flex-direction: column;
-    margin:10px 0;
+    margin: 10px 0;
 }
 
-.input{
+.input {
     padding: 10px;
-    background-color: rgb(4, 12, 41);
+    background-color: transparent;
     border: none;
     outline: none;
     border-bottom: 2px solid rgb(155, 155, 155);
@@ -49,18 +49,18 @@ body{
     transition: 300ms;
 }
 
-.input:focus{
+.input:focus {
     outline: none;
     border: none;
     border-bottom: 3px solid dodgerblue;
     transition: 300ms;
 }
 
-.small{
+.small {
     padding: 5px 10px;
 }
 
-.btn{
+.btn {
     width: 100%;
     padding: 10px;
     margin-top: 5px;
@@ -70,39 +70,40 @@ body{
     font-weight: 600;
     transition: transform 300ms;
 }
-.btn:focus{
+
+.btn:focus {
     outline: none;
 }
 
-.btn:hover{
+.btn:hover {
     background-color: rgb(12, 71, 129);
     transform: scale(0.9);
     transition: transform 300ms;
 }
 
-.btn-blue{
+.btn-blue {
     background-color: dodgerblue;
     color: white;
 }
 
-.result{
-    margin-top:25px;
+.result {
+    margin-top: 25px;
     font-size: 18px;
     color: aqua;
 }
 
-.input-grp.error .input{
+.input-grp.error .input {
     border-bottom: 3px solid tomato;
 }
 
-.input-grp.success .input{
+.input-grp.success .input {
     border-bottom: 3px solid rgb(60, 202, 122);
 }
 
-.input-grp.error .small{
+.input-grp.error .small {
     color: tomato;
 }
 
-.input-grp.success .small{
+.input-grp.success .small {
     color: rgb(60, 202, 122);
 }
