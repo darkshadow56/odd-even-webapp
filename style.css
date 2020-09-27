@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-color: rgb(4, 12, 41);
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.card{
+    box-shadow: 2px 3px 10px rgb(255,255,255,0.2), -2px -3px 10px rgb(0,0,0,0.3);
+    padding: 50px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-grp{
+    display: flex;
+    flex-direction: column;
+    margin:10px 0;
+}
+
+.input{
+    padding: 10px;
+    background-color: rgb(4, 12, 41);
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgb(155, 155, 155);
+    color: white;
+    font-size: 18px;
+    transition: 300ms;
+}
+
+.input:focus{
+    outline: none;
+    border: none;
+    border-bottom: 3px solid dodgerblue;
+    transition: 300ms;
+}
+
+.small{
+    padding: 5px 10px;
+}
+
+.btn{
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: transform 300ms;
+}
+.btn:focus{
+    outline: none;
+}
+
+.btn:hover{
+    background-color: rgb(12, 71, 129);
+    transform: scale(0.9);
+    transition: transform 300ms;
+}
+
+.btn-blue{
+    background-color: dodgerblue;
+    color: white;
+}
+
+.result{
+    margin-top:25px;
+    font-size: 18px;
+    color: aqua;
+}
+
+.input-grp.error .input{
+    border-bottom: 3px solid tomato;
+}
+
+.input-grp.success .input{
+    border-bottom: 3px solid rgb(60, 202, 122);
+}
+
+.input-grp.error .small{
+    color: tomato;
+}
+
+.input-grp.success .small{
+    color: rgb(60, 202, 122);
+}
